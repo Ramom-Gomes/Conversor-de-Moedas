@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid black;
+    margin-left: 10px;
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.titulo {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.input {
+    border: 1px solid black;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.botao {
+    color: black;
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.botao:hover {
+    border: 1px solid black;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
