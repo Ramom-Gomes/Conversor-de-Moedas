@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Conversor.module.css';
+import ingla from '../image/inglaterra.png';
 
 export const ConversorLibra = () => {
     let [valor, setValor] = useState(0);
@@ -25,6 +26,7 @@ export const ConversorLibra = () => {
         <div>
             {troca &&
                 <div className={styles.main}>
+                    <img src={ingla} width={80} />
                     <h4 className={styles.titulo}>GBP para BRL</h4>
                     <input className={styles.input} 
                     type="number"
@@ -37,6 +39,7 @@ export const ConversorLibra = () => {
             }    
             {!troca &&
                 <div className={styles.main}>
+                    <img src={ingla} width={80} />
                     <h6 className={styles.titulo}>BRL para GBP</h6>
                     <input className={styles.input} 
                     type="number"

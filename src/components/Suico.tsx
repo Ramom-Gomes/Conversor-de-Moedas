@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Conversor.module.css';
+import suica from '../image/suica.jpg';
 
 export const ConveterSuico = () => {
     let [valor, setValor] = useState(0);
@@ -25,6 +26,7 @@ export const ConveterSuico = () => {
         <div className={styles.tudo}>
             {troca &&
                 <div className={styles.main}>
+                    <img src={suica} width={80} />
                     <h4 className={styles.titulo}>CHF para BRL</h4>
                     <input className={styles.input} 
                     type="number"
@@ -37,6 +39,7 @@ export const ConveterSuico = () => {
             }    
             {!troca &&
                 <div className={styles.main}>
+                    <img src={suica} width={80} />
                     <h6 className={styles.titulo}>BRL para CHF</h6>
                     <input className={styles.input} 
                     type="number"

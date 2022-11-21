@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Conversor.module.css';
+import portu from '../image/portugal.jpg';
 
 export const ConverteEuro = () => {
     let [valor, setValor] = useState(0);
@@ -25,6 +26,7 @@ export const ConverteEuro = () => {
         <div>
             {troca &&
                 <div className={styles.main}>
+                    <img src={portu} width={80}/>
                     <h4 className={styles.titulo}>EUR para BRL</h4>
                     <input className={styles.input} 
                     type="number"
@@ -37,6 +39,7 @@ export const ConverteEuro = () => {
             }    
             {!troca &&
                 <div className={styles.main}>
+                    <img src={portu} width={80}/>
                     <h6 className={styles.titulo}>BRL para EUR</h6>
                     <input className={styles.input} 
                     type="number"

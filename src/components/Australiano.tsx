@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Conversor.module.css';
+import aust from '../image/australia.png';
 
 export const ConveterAustraliano = () => {
     let [valor, setValor] = useState(0);
@@ -25,6 +26,7 @@ export const ConveterAustraliano = () => {
         <div className={styles.tudo}>
             {troca &&
                 <div className={styles.main}>
+                    <img src={aust} width={80} />
                     <h4 className={styles.titulo}>AUD para BRL</h4>
                     <input className={styles.input} 
                     type="number"
@@ -37,6 +39,7 @@ export const ConveterAustraliano = () => {
             }    
             {!troca &&
                 <div className={styles.main}>
+                    <img src={aust} width={80} />
                     <h6 className={styles.titulo}>BRL para AUD</h6>
                     <input className={styles.input} 
                     type="number"

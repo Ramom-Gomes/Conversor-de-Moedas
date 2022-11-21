@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Conversor.module.css';
+import eua from '../image/eua.png';
 
 export const ConveterDolar = () => {
     let [valor, setValor] = useState(0);
@@ -25,6 +26,7 @@ export const ConveterDolar = () => {
         <div className={styles.tudo}>
             {troca &&
                 <div className={styles.main}>
+                    <img src={eua} width={80} />
                     <h4 className={styles.titulo}>USD para BRL</h4>
                     <input className={styles.input} 
                     type="number"
@@ -37,6 +39,7 @@ export const ConveterDolar = () => {
             }    
             {!troca &&
                 <div className={styles.main}>
+                    <img src={eua} width={80}/>
                     <h6 className={styles.titulo}>BRL para USD</h6>
                     <input className={styles.input} 
                     type="number"

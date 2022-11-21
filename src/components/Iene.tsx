@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Conversor.module.css';
+import japao from '../image/japao.jpg';
 
 export const ConverteIene = () => {
     let [valor, setValor] = useState(0);
@@ -25,6 +26,7 @@ export const ConverteIene = () => {
         <div>
             {troca &&
                 <div className={styles.main}>
+                    <img src={japao} width={80}/>
                     <h4 className={styles.titulo}>BRL para JPY</h4>
                     <input className={styles.input} 
                     type="number"
@@ -37,6 +39,7 @@ export const ConverteIene = () => {
             }    
             {!troca &&
                 <div className={styles.main}>
+                    <img src={japao} width={80}/>
                     <h6 className={styles.titulo}>JPY para BRL</h6>
                     <input className={styles.input} 
                     type="number"
